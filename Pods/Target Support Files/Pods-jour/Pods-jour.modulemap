@@ -1,0 +1,6 @@
+framework module Pods_jour {
+  umbrella header "Pods-jour-umbrella.h"
+
+  export *
+  module * { export * }
+}

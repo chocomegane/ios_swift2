@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewTwoController: UIViewController {
 
     @IBOutlet weak var wevView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // URL設定
+        let urlString = "https://www.google.com/"
+        let encodedUrlString = urlString.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)
+        
+        let url = NSURL(string: encodedUrlString!)
+        let request = NSURLRequest(url: url! as URL)
+        
+        wevView.load(request as URLRequest)
+        
+        self.view.addSubview(wevView)
 
         // Do any additional setup after loading the view.
     }
