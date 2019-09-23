@@ -12,9 +12,13 @@ import WebKit
 class ViewTwoController: UIViewController {
 
     @IBOutlet weak var wevView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +26,8 @@ class ViewTwoController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
 
     /*
